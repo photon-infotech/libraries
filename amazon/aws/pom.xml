@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <parent>
+        <groupId>com.photon.phresco.libraries</groupId>
+        <artifactId>phresco-libraries</artifactId>
+        <version>2.0.0.10001-SNAPSHOT</version>
+        <relativePath>../../</relativePath>
+    </parent>
+    
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.photon.phresco.libraries</groupId>
+    <artifactId>phresco-aws</artifactId>
+    <name>Phresco Amazon Webservice API</name>
+    <url>http://www.phresco.org</url>
+  
+    <distributionManagement>
+        <site>
+            <id>phresco.libraries.aws</id>
+            <name>Phresco Libraries - AWS</name>
+            <url>scp://phresco.org/home/projects/libraries/aws/public_html/</url>
+        </site>
+    </distributionManagement>
+  
+  <dependencies>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>3.8.1</version>
+        <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>
