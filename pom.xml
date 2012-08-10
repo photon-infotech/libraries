@@ -4,14 +4,14 @@
   <!--   <parent>
         <groupId>com.photon.phresco</groupId>
         <artifactId>phresco-parent</artifactId>
-        <version>2.0.0.10001-SNAPSHOT</version>
+        <version>2.0.0.10002-SNAPSHOT</version>
         <relativePath>../</relativePath>
     </parent>
      -->
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.photon.phresco.libraries</groupId>
     <artifactId>phresco-libraries</artifactId>
-	<version>2.0.0.10001-SNAPSHOT</version>
+	<version>2.0.0.10002-SNAPSHOT</version>
     <url>http://www.phresco.org</url>
     <packaging>pom</packaging>
     <name>Phresco libraries</name>
@@ -24,6 +24,14 @@
     </modules>
 
     <distributionManagement>
+            <repository>
+                <id>${releases.repo.id}</id>
+                <url>${releases.repo.url}</url>
+            </repository>
+            <snapshotRepository>
+                <id>${snapshots.repo.id}</id>
+                <url>${snapshots.repo.url}</url>
+            </snapshotRepository>
         <site>
             <id>phresco.libraries</id>
             <name>Phresco Libraries</name>
