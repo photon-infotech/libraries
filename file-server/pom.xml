@@ -27,7 +27,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.10</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
   </dependencies>
@@ -36,7 +36,7 @@
 		<plugins>
 		    <plugin>
 		        <artifactId>maven-jar-plugin</artifactId>
-		        <version>2.3.1</version>
+		        <version>${maven-jar-plugin.version}</version>
 		        <configuration>
 		        <archive>
 		        <manifest>
@@ -49,7 +49,7 @@
             <plugin>
                 <groupId>org.apache.geronimo.genesis.plugins</groupId>
                 <artifactId>tools-maven-plugin</artifactId>
-                <version>1.1</version>
+                <version>${tools-maven-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>install-legal-files</id>

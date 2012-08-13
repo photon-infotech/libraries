@@ -23,6 +23,12 @@
             <module>file-server</module>
     </modules>
 
+	<properties>
+		<siteBaseUrl>file://C:/apache-tomcat-7.0.26/webapps/ROOT/phresco-site/</siteBaseUrl>
+		<junit.version>4.10</junit.version>
+		<maven-jar-plugin.version>2.3.1</maven-jar-plugin.version>
+		<tools-maven-plugin.version>1.1</tools-maven-plugin.version>
+	</properties>
     <distributionManagement>
             <repository>
                 <id>${releases.repo.id}</id>
