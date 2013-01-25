@@ -1,1 +1,11 @@
 target/
+
+.project
+
+.settings/org.eclipse.m2e.core.prefs
+
+file-server/.classpath
+
+file-server/.settings/org.eclipse.jdt.core.prefs
+
+file-server/.settings/org.eclipse.m2e.core.prefs
