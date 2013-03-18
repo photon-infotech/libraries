@@ -51,7 +51,6 @@ public class PhrescoFileServer {
 	private static String OCTECT_STREAM_CONT_TYPE = "application/octet-stream";
 	private static String JPEG_CONT_TYPE = "image/jpeg";
 	private static String CSS_CONT_TYPE = "text/css";
-	private static String PERCENTAGE_20 =  "%20";
 	
 	public static void main(String[] args) {
 		// read arguments
@@ -112,7 +111,7 @@ public class PhrescoFileServer {
 						errorReport(pout, connection, "403", "Forbidden",
 								"You don't have permission to access the requested URL.");
 					} else {
-						String path = wwwhome + "/" + req.replace(PERCENTAGE_20, " ");
+						String path = wwwhome + "/" + req;
 						File f = new File(path);
 						if (f.isDirectory() && !path.endsWith("/")) {
 							// redirect browser if referring to directory
