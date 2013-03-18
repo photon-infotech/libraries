@@ -112,7 +112,7 @@ public class PhrescoFileServer {
 						errorReport(pout, connection, "403", "Forbidden",
 								"You don't have permission to access the requested URL.");
 					} else {
-						String path = wwwhome + "/" + req.replace(PERCENTAGE_20, " ");;
+						String path = wwwhome + "/" + req.replace(PERCENTAGE_20, " ");
 						File f = new File(path);
 						if (f.isDirectory() && !path.endsWith("/")) {
 							// redirect browser if referring to directory
