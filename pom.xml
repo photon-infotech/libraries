@@ -5,7 +5,7 @@
     <artifactId>phresco-libraries</artifactId>
     <packaging>pom</packaging>
     <name>Phresco libraries</name>
-    <version>3.0.0.13005-SNAPSHOT</version>
+    <version>3.0.0.13006-SNAPSHOT</version>
     <url>http://www.phresco.org</url>
     <scm>
         <connection>https://github.com/photon-infotech/libraries.git</connection>
@@ -22,15 +22,15 @@
                         <target xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1.5</target>
                     </configuration>
                 </plugin>
-            </plugins>
-        </pluginManagement>
-        <plugins>
-            <plugin>
+		 <plugin>
                 <groupId>com.photon.phresco.plugins</groupId>
                 <artifactId>phresco-maven-plugin</artifactId>
                 <version>2.2.1.1000</version>
                 <extensions>true</extensions>
             </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
