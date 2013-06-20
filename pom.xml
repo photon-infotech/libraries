@@ -7,6 +7,9 @@
     <name>Phresco libraries</name>
     <version>3.0.0.13005-SNAPSHOT</version>
     <url>http://www.phresco.org</url>
+    <scm>
+        <connection>https://github.com/photon-infotech/libraries.git</connection>
+    </scm>
     <build>
         <directory>do_not_checkin/target</directory>
         <finalName>libraries</finalName>
