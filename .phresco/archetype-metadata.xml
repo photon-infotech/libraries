@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Archetype - phresco-java-quickstart-archetype
+
+    Copyright (C) 1999-2013 Photon Infotech Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<archetype-descriptor name="java-quickstart">
+
+  <fileSets> 	
+  		<fileSet filtered="false" packaged="false"> 
+			<directory>.phresco</directory> 
+			<includes> 
+				<include>archetype-metadata.xml</include> 
+				<include>excludefiles.txt</include> 
+				<include>phresco-package-info.xml</include>
+				<include>phresco-validate-code-info.xml</include>
+				<include>phresco-functional-test-info.xml</include>
+				<include>phresco-load-test-info.xml</include>
+				<include>phresco-ci-info.xml</include>
+				<include>phresco-application-handler-info.xml</include>
+				<include>phresco-pdf-report-info.xml</include>
+			</includes> 
+		</fileSet>
+		<fileSet filtered="false" packaged="false"> 
+			<directory>docs</directory> 
+			<includes> 
+				<include>PHTN_Reference_Guide.doc</include> 
+				<include>PHTN_Release_Notes.doc</include> 
+				<include>README.txt</include> 
+			</includes> 
+		</fileSet>
+		<fileSet filtered="false" packaged="false"> 
+			<directory>src/main/java/com/photon/phresco</directory> 
+			<includes> 
+				<include>HelloWorld.java</include> 
+			</includes> 
+		</fileSet>
+        <fileSet filtered="false" packaged="false"> 
+			<directory>test/functional</directory> 
+			<includes> 
+				<include>pom.xml</include> 
+			</includes> 
+		</fileSet>
+        <fileSet filtered="false" packaged="false"> 
+			<directory>test/manual</directory> 
+			<includes>
+				<include>HeliOs_Manual_Testcases.xlsx</include>
+			</includes>
+		</fileSet>
+        <fileSet filtered="false" packaged="false"> 
+			<directory>test/functional/src/test/java/com/photon/phresco/testcases</directory> 
+			<includes> 
+				<include>AllTest.java</include>
+                <include>SampleHelloWorld.java</include>
+                <include>Suite1.java</include>
+			</includes> 
+		</fileSet>
+		<fileSet filtered="false" packaged="false"> 
+			<directory>src/test/java</directory> 
+			<includes> 
+				<include>HelloWorldTest.java</include> 
+			</includes> 
+		</fileSet>
+  </fileSets>
+  
+</archetype-descriptor>
