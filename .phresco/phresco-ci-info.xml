@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <mojos>
     <mojo>
-      <goal>validate-code</goal>
-      <description>Goal which validates the Java Quick Start project</description>
-      <requiresDirectInvocation>false</requiresDirectInvocation>
-      <requiresProject>true</requiresProject>
-      <requiresReports>false</requiresReports>
-      <aggregator>false</aggregator>
-      <requiresOnline>false</requiresOnline>
-      <inheritedByDefault>true</inheritedByDefault>
-      <language>java</language>
-      <instantiationStrategy>per-lookup</instantiationStrategy>
-      <executionStrategy>once-per-session</executionStrategy>
-      <threadSafe>false</threadSafe>
-      <configuration>
-      <parameters>
-        <parameter>
-            <name>
-               <value lang="en">Validate Against</value>
-            </name>
-            <type>List</type>
-            <required>false</required>
-            <editable>true</editable>
-            <description></description>
-            <key>sonar</key>
-            <possibleValues>
-                <value key="src" dependency="skipTests">Source</value>
-                <value key="functional">Functional Test</value>
-            </possibleValues>
-            <multiple>false</multiple>
-            <sort>false</sort>
-            <show>true</show>
-          <value></value>
-        </parameter>
-        <parameter>
-            <pluginParameter>plugin</pluginParameter>
-            <mavenCommands>
-                <mavenCommand>
-                    <key>true</key>
-                    <value>-DskipTests=true</value>
-                </mavenCommand>
-                <mavenCommand>
-                    <key>false</key>
-                    <value>-DskipTests=false</value>
-                </mavenCommand>
-            </mavenCommands>
-            <name>
-                <value lang="en">Skip Unit Test</value>
-            </name>
-            <type>Boolean</type>
-            <required>false</required>
-            <editable>true</editable>
-            <description></description>
-            <key>skipTests</key>
-            <multiple>false</multiple>
-            <sort>false</sort>
-            <show>false</show>
-            <value>false</value>
-        </parameter>
-    </parameters>
-    </configuration>
+        <goal>validate-code</goal>
+        <description>Goal which validates the Java Quick Start project</description>
+        <requiresDirectInvocation>false</requiresDirectInvocation>
+        <requiresProject>true</requiresProject>
+        <requiresReports>false</requiresReports>
+        <aggregator>false</aggregator>
+        <requiresOnline>false</requiresOnline>
+        <inheritedByDefault>true</inheritedByDefault>
+        <language>java</language>
+        <instantiationStrategy>per-lookup</instantiationStrategy>
+        <executionStrategy>once-per-session</executionStrategy>
+        <threadSafe>false</threadSafe>
+        <configuration>
+            <parameters>
+                <parameter>
+                    <name>
+                        <value lang="en">Validate Against</value>
+                    </name>
+                    <type>List</type>
+                    <required>false</required>
+                    <editable>true</editable>
+                    <description></description>
+                    <key>sonar</key>
+                    <possibleValues>
+                        <value key="src" dependency="skipTests">Source</value>
+                        <value key="functional">Functional Test</value>
+                    </possibleValues>
+                    <multiple>false</multiple>
+                    <value>src</value>
+                    <sort>false</sort>
+                    <show>true</show>
+                </parameter>
+                <parameter>
+                    <pluginParameter>plugin</pluginParameter>
+                    <mavenCommands>
+                        <mavenCommand>
+                            <key>true</key>
+                            <value>-DskipTests=true</value>
+                        </mavenCommand>
+                        <mavenCommand>
+                            <key>false</key>
+                            <value>-DskipTests=false</value>
+                        </mavenCommand>
+                    </mavenCommands>
+                    <name>
+                        <value lang="en">Skip Unit Test</value>
+                    </name>
+                    <type>Boolean</type>
+                    <required>false</required>
+                    <editable>true</editable>
+                    <description></description>
+                    <key>skipTests</key>
+                    <multiple>false</multiple>
+                    <value>false</value>
+                    <sort>false</sort>
+                    <show>false</show>
+                </parameter>
+            </parameters>
+        </configuration>
     </mojo>
     <mojo>
         <goal>package</goal>
@@ -71,14 +71,14 @@
         <requiresOnline>false</requiresOnline>
         <inheritedByDefault>true</inheritedByDefault>
         <implementation>
-           <dependency>
-               <groupId>com.photon.phresco.plugins</groupId>
-               <artifactId>java-phresco-plugin</artifactId>
-               <type>jar</type>
-               <version>2.2.1.1000</version>
-               <class>com.photon.phresco.plugins.java.JavaPlugin</class>
-           </dependency>
-       </implementation>
+            <dependency>
+                <groupId>com.photon.phresco.plugins</groupId>
+                <artifactId>java-phresco-plugin</artifactId>
+                <type>jar</type>
+                <version>2.2.1.1000</version>
+                <class>com.photon.phresco.plugins.java.JavaPlugin</class>
+            </dependency>
+        </implementation>
         <language>java</language>
         <instantiationStrategy>per-lookup</instantiationStrategy>
         <executionStrategy>once-per-session</executionStrategy>
@@ -95,9 +95,9 @@
                     <description></description>
                     <key>buildName</key>
                     <multiple>false</multiple>
+                    <value></value>
                     <sort>false</sort>
                     <show>true</show>
-                    <value></value>
                 </parameter>
                 <parameter>
                     <name>
@@ -109,9 +109,9 @@
                     <description></description>
                     <key>buildNumber</key>
                     <multiple>false</multiple>
+                    <value>1</value>
                     <sort>false</sort>
                     <show>false</show>
-                    <value>1</value>
                 </parameter>
                 <parameter>
                     <name>
@@ -123,7 +123,7 @@
                     <description></description>
                     <key>jarName</key>
                     <multiple>false</multiple>
-                    <value>HelloWorld</value>
+                    <value></value>
                     <sort>false</sort>
                     <show>true</show>
                 </parameter>
@@ -137,7 +137,7 @@
                     <description></description>
                     <key>mainClassName</key>
                     <multiple>false</multiple>
-                    <value>com.photon.phresco.HelloWorld</value>
+                    <value></value>
                     <sort>false</sort>
                     <show>true</show>
                 </parameter>
@@ -147,13 +147,13 @@
                     </name>
                     <type>DynamicParameter</type>
                     <dynamicParameter>
-                         <class>com.photon.phresco.impl.EnvironmentsParameterImpl</class>
+                        <class>com.photon.phresco.impl.EnvironmentsParameterImpl</class>
                         <dependencies>
                             <dependency>
-                                <groupId>com.photon.phresco.commons</groupId>
-                                <artifactId>phresco-commons</artifactId>
-                                <type>jar</type>
-                                <version>2.2.1.1000</version>
+<groupId>com.photon.phresco.commons</groupId>
+<artifactId>phresco-commons</artifactId>
+<type>jar</type>
+<version>2.2.1.1000</version>
                             </dependency>
                         </dependencies>
                     </dynamicParameter>
@@ -161,9 +161,9 @@
                     <editable>true</editable>
                     <key>environmentName</key>
                     <multiple>true</multiple>
+                    <value>Production</value>
                     <sort>false</sort>
                     <show>true</show>
-                    <value>Production</value>
                 </parameter>
                 <parameter>
                     <name>
@@ -175,9 +175,9 @@
                     <description></description>
                     <key>showSettings</key>
                     <multiple>false</multiple>
+                    <value>false</value>
                     <sort>false</sort>
                     <show>true</show>
-                    <value>false</value>
                     <dependency>environmentName</dependency>
                 </parameter>
                 <parameter>
@@ -201,9 +201,9 @@
                     <description></description>
                     <key>skipTest</key>
                     <multiple>false</multiple>
+                    <value>false</value>
                     <sort>false</sort>
                     <show>true</show>
-                    <value>false</value>
                 </parameter>
                 <parameter>
                     <pluginParameter>framework</pluginParameter>
@@ -234,9 +234,9 @@
                         <value key="showDebug">Show Debug</value>
                     </possibleValues>
                     <multiple>false</multiple>
+                    <value>showErrors</value>
                     <sort>false</sort>
                     <show>true</show>
-                    <value></value>
                 </parameter>
                 <parameter>
                     <name>
@@ -269,40 +269,40 @@
         <executionStrategy>once-per-session</executionStrategy>
         <threadSafe>false</threadSafe>
         <configuration>
-        <parameters>
-            <parameter>
-                <name>
-                    <value lang="en">Test Against</value>
-                </name>
-                <type>List</type>
-                <required>false</required>
-                <editable>true</editable>
-                <description></description>
-                <key>testAgainst</key>
-                <possibleValues>
-                    <value key="jar" dependency="jarLocation">Jar</value>
-				</possibleValues>
-                <value></value>
-                <sort>false</sort>
-                <show>true</show>
-            </parameter>
-            <parameter>
-                <name>
-                    <value lang="en">JAR Location</value>
-                </name>
-                <type>FileBrowse</type>
-                <required>false</required>
-                <editable>true</editable>
-                <description></description>
-                <key>jarLocation</key>
-                <multiple>false</multiple>
-                <value></value>
-                <sort>false</sort>
-                <show>false</show>
-                <fileType>jar</fileType>
-            </parameter>
-        </parameters>
-    </configuration>
+            <parameters>
+                <parameter>
+                    <name>
+                        <value lang="en">Test Against</value>
+                    </name>
+                    <type>List</type>
+                    <required>false</required>
+                    <editable>true</editable>
+                    <description></description>
+                    <key>testAgainst</key>
+                    <possibleValues>
+                        <value key="jar" dependency="jarLocation">Jar</value>
+                    </possibleValues>
+                    <value></value>
+                    <sort>false</sort>
+                    <show>true</show>
+                </parameter>
+                <parameter>
+                    <name>
+                        <value lang="en">JAR Location</value>
+                    </name>
+                    <type>FileBrowse</type>
+                    <required>false</required>
+                    <editable>true</editable>
+                    <description></description>
+                    <key>jarLocation</key>
+                    <multiple>false</multiple>
+                    <value></value>
+                    <sort>false</sort>
+                    <show>false</show>
+                    <fileType>jar</fileType>
+                </parameter>
+            </parameters>
+        </configuration>
     </mojo>
     <mojo>
         <goal>pdf-report</goal>
@@ -422,14 +422,14 @@
         <requiresOnline>false</requiresOnline>
         <inheritedByDefault>true</inheritedByDefault>
         <implementation>
-           <dependency>
-               <groupId>com.photon.phresco.plugins</groupId>
-               <artifactId>ci-phresco-plugin</artifactId>
-               <type>jar</type>
-               <version>2.2.1.1000</version>
-               <class>com.photon.phresco.plugins.CIPlugin</class>
-           </dependency>
-       </implementation>
+            <dependency>
+                <groupId>com.photon.phresco.plugins</groupId>
+                <artifactId>ci-phresco-plugin</artifactId>
+                <type>jar</type>
+                <version>2.2.1.1000</version>
+                <class>com.photon.phresco.plugins.CIPlugin</class>
+            </dependency>
+        </implementation>
         <language>java</language>
         <instantiationStrategy>per-lookup</instantiationStrategy>
         <executionStrategy>once-per-session</executionStrategy>
