@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0">
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.photon.phresco.libraries</groupId>
     <artifactId>phresco-libraries</artifactId>
@@ -69,19 +68,19 @@
                         <configuration>
                             <excludeDefaultDirectories xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</excludeDefaultDirectories>
                             <filesets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<fileset>
-    <directory>do_not_checkin/build</directory>
-    <includes>
-        <include>**/*</include>
+                                <fileset>
+                                    <directory>do_not_checkin/build</directory>
+                                    <includes>
+                                        <include>**/*</include>
 							  </includes>
-    <followSymlinks>false</followSymlinks>
+                                    <followSymlinks>false</followSymlinks>
 							</fileset>
-<fileset>
-    <directory>do_not_checkin/archives</directory>
-    <includes>
-        <include>**/*</include>
+                                <fileset>
+                                    <directory>do_not_checkin/archives</directory>
+                                    <includes>
+                                        <include>**/*</include>
                     </includes>
-    <followSymlinks>false</followSymlinks>
+                                    <followSymlinks>false</followSymlinks>
               </fileset>
 						  </filesets>
                         </configuration>
