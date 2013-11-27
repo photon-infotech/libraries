@@ -14,7 +14,7 @@
                 <groupId>com.photon.phresco.plugins</groupId>
                 <artifactId>java-phresco-plugin</artifactId>
                 <type>jar</type>
-                <version>2.2.1.1000</version>
+                <version>3.2.0.2000</version>
                 <class>com.photon.phresco.plugins.java.JavaPlugin</class>
             </dependency>
         </implementation>
@@ -34,7 +34,7 @@
                     <description></description>
                     <key>buildName</key>
                     <multiple>false</multiple>
-                    <value>success2</value>
+                    <value></value>
                     <sort>false</sort>
                     <show>true</show>
                 </parameter>
@@ -48,7 +48,7 @@
                     <description></description>
                     <key>buildNumber</key>
                     <multiple>false</multiple>
-                    <value>12345</value>
+                    <value></value>
                     <sort>false</sort>
                     <show>true</show>
                 </parameter>
@@ -106,7 +106,7 @@
 <groupId>com.photon.phresco.commons</groupId>
 <artifactId>phresco-commons</artifactId>
 <type>jar</type>
-<version>2.2.1.1000</version>
+<version>3.2.0.2000</version>
                             </dependency>
                         </dependencies>
                     </dynamicParameter>
@@ -201,7 +201,6 @@
                     <description></description>
                     <key>packageFileBrowse</key>
                     <multiple>false</multiple>
-                    <value></value>
                     <sort>false</sort>
                     <show>true</show>
                 </parameter>
